@@ -4,6 +4,10 @@ import { withStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import Container from "@material-ui/core/Container"
 import Typography from "../components/Typography"
+import { StaticImage } from "gatsby-plugin-image"
+import ProductValues1 from "../../images/productValues1.svg"
+import ProductValues2 from "../../images/productValues2.svg"
+import ProductValues3 from "../../images/productValues3.svg"
 
 const styles = theme => ({
   root: {
@@ -43,19 +47,15 @@ function ProductValues(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <img
-          src="/static/themes/onepirate/productCurvyLines.png"
+        <StaticImage
+          src="../../images/productCurvyLines.png"
           className={classes.curvyLines}
           alt="curvy lines"
         />
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-              />
+              <ProductValues1 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
                 The best luxury hotels
               </Typography>
@@ -71,11 +71,7 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
-              />
+              <ProductValues2 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
                 New experiences
               </Typography>
@@ -89,11 +85,7 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
-                className={classes.image}
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-              />
+              <ProductValues3 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
                 Exclusive rates
               </Typography>
