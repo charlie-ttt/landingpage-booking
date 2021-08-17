@@ -1,14 +1,28 @@
-import * as React from "react"
+import withRoot from "../modules/withRoot"
+// --- Post bootstrap -----
+import React from "react"
+import ProductCategories from "../modules/views/ProductCategories"
+import ProductSmokingHero from "../modules/views/ProductSmokingHero"
+import AppFooter from "../modules/views/AppFooter"
+import ProductHero from "../modules/views/ProductHero"
+import ProductValues from "../modules/views/ProductValues"
+import ProductHowItWorks from "../modules/views/ProductHowItWorks"
+import ProductCTA from "../modules/views/ProductCTA"
+import AppAppBar from "../modules/views/AppAppBar"
 
-import Seo from "../components/seo"
+function Index() {
+  return (
+    <React.Fragment>
+      <AppAppBar />
+      <ProductHero />
+      <ProductValues />
+      <ProductCategories />
+      <ProductHowItWorks />
+      <ProductCTA />
+      <ProductSmokingHero />
+      <AppFooter />
+    </React.Fragment>
+  )
+}
 
-const IndexPage = () => (
-  <>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-  </>
-)
-
-export default IndexPage
+export default withRoot(Index)
