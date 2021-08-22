@@ -1,6 +1,6 @@
 import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
-import ProductValues1 from "../../images/ProductValues1.svg"
+import ProductValues1 from "../../images/productValues1.svg"
 import ProductValues2 from "../../images/productValues2.svg"
 import ProductValues3 from "../../images/productValues3.svg"
 import PropTypes from "prop-types"
