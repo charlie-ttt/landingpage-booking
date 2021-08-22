@@ -1,10 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
 import Button from "@material-ui/core/Button"
 import Container from "@material-ui/core/Container"
-import { withStyles } from "@material-ui/core/styles"
+import PropTypes from "prop-types"
+import React from "react"
 import Typography from "../components/Typography"
-import ProducBuoy from "../../images/producBuoy.svg"
+import { withStyles } from "@material-ui/core/styles"
 
 const styles = theme => ({
   root: {
@@ -22,7 +21,6 @@ const styles = theme => ({
   },
   link: {
     marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(3),
   },
   buoy: {
     width: 60,
@@ -34,15 +32,15 @@ function ProductSmokingHero(props) {
 
   return (
     <Container className={classes.root} component="section">
-      <Button className={classes.button}>
-        <Typography variant="h4" component="span">
-          Got any questions? Need help?
-        </Typography>
-      </Button>
-      <Typography variant="subtitle1" className={classes.link}>
-        We are here to help. Get in touch!
+      <Typography variant="h4" component="span">
+        มีคำถามเพิ่มเติม?
       </Typography>
-      <ProducBuoy className={classes.buoy} />
+      <Typography variant="subtitle1" className={classes.link}>
+        Email
+      </Typography>
+      <Typography variant="subtitle1" className={classes.link}>
+        Line: achanont
+      </Typography>
     </Container>
   )
 }
