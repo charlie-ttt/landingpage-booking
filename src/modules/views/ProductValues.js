@@ -1,13 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { withStyles } from "@material-ui/core/styles"
-import Grid from "@material-ui/core/Grid"
 import Container from "@material-ui/core/Container"
-import Typography from "../components/Typography"
-import { StaticImage } from "gatsby-plugin-image"
-import ProductValues1 from "../../images/productValues1.svg"
+import Grid from "@material-ui/core/Grid"
+import ProductValues1 from "../../images/ProductValues1.svg"
 import ProductValues2 from "../../images/productValues2.svg"
 import ProductValues3 from "../../images/productValues3.svg"
+import PropTypes from "prop-types"
+import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import Typography from "../components/Typography"
+import { withStyles } from "@material-ui/core/styles"
 
 const styles = theme => ({
   root: {
@@ -57,15 +57,11 @@ function ProductValues(props) {
             <div className={classes.item}>
               <ProductValues1 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                สะดวกใช้ง่าย
               </Typography>
               <Typography variant="h5">
-                {
-                  "From the latest trendy boutique hotel to the iconic palace with XXL pool"
-                }
-                {
-                  ", go for a mini-vacation just a few subway stops away from your home."
-                }
+                สะดวก รวดเร็ว
+                สามารถดูตารางการจองได้ผ่านทางเว็บไซต์โดยไม่ต้องโทรถาม
               </Typography>
             </div>
           </Grid>
@@ -73,13 +69,10 @@ function ProductValues(props) {
             <div className={classes.item}>
               <ProductValues2 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                รองรับการจ่ายเงินออนไลน์
               </Typography>
               <Typography variant="h5">
-                {
-                  "Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… "
-                }
-                {"your Sundays will not be alike."}
+                ไม่ว่าจะเป็นการจ่ายเงินผ่านการโอน หรือบัตรเครดิต
               </Typography>
             </div>
           </Grid>
@@ -87,11 +80,11 @@ function ProductValues(props) {
             <div className={classes.item}>
               <ProductValues3 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                จองได้ 24 ชั่วโมง
               </Typography>
               <Typography variant="h5">
-                {"By registering, you will access specially negotiated rates "}
-                {"that you will not find anywhere else."}
+                ไม่ว่าจะเป็นต้องดึกที่สนามปิดแล้ว ลูกค้าก็สามารถทำการจองได้ 24
+                ชั่วโมง
               </Typography>
             </div>
           </Grid>
