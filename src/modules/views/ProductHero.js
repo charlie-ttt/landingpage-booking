@@ -44,7 +44,7 @@ function ProductHero(props) {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h3" marked="center">
-        เว็บจองสนามกีฬา ง่าย เร็ว เพรียบพร้อม
+        เว็บจองสนามกีฬา ใช้ง่าย ไม่วุ่นวาย มีทุกฟังก์ชั่น
       </Typography>
       <Typography
         color="inherit"
@@ -70,7 +70,7 @@ function ProductHero(props) {
           size="large"
           className={classes.button}
           component="a"
-          href="https://calendar-booking-lite.vercel.app"
+          href="https://app.calendarbooking.site/"
           target="_blank"
         >
           ตัวอย่างเว็บไซต์ (Demo)
