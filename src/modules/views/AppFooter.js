@@ -2,7 +2,6 @@ import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
 import Link from "@material-ui/core/Link"
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import Typography from "../components/Typography"
 import { makeStyles } from "@material-ui/core/styles"
 
@@ -61,14 +60,6 @@ export default function AppFooter() {
           className={classes.iconsWrapper}
           spacing={2}
         >
-          <Grid item className={classes.icons}>
-            <a href="https://material-ui.com/" className={classes.icon}>
-              <StaticImage
-                src="../../images/appFooterFacebook.png"
-                alt="Facebook"
-              />
-            </a>
-          </Grid>
           <Grid item>
             <Copyright />
           </Grid>
