@@ -35,7 +35,7 @@ function ProductSmokingHero(props) {
         มีคำถามเพิ่มเติม?
       </Typography>
       <Typography variant="subtitle1" className={classes.link}>
-        Email
+        📞 &nbsp; 081-4466262
       </Typography>
       <Typography variant="subtitle1" className={classes.link}>
         Line: achanont

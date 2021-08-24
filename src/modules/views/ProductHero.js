@@ -2,6 +2,7 @@ import Button from "../components/Button"
 import ProductHeroLayout from "./ProductHeroLayout"
 import PropTypes from "prop-types"
 import React from "react"
+import SimpleDialog from "../components/SimpleDialog"
 import TennisCourt from "../../../static/tennis-court.jpeg"
 import Typography from "../components/Typography"
 import { withStyles } from "@material-ui/core/styles"
@@ -33,6 +34,7 @@ const styles = theme => ({
 })
 
 function ProductHero(props) {
+  const [open, setOpen] = React.useState(false)
   const { classes } = props
 
   return (
@@ -60,10 +62,11 @@ function ProductHero(props) {
           variant="contained"
           size="large"
           className={classes.button}
-          component="a"
+          onClick={() => setOpen(!open)}
         >
-          ทดลองใช้งาน (Trial)
+          ทดลองใช้งานฟรี 1 เดือน (Trial)
         </Button>
+        <SimpleDialog open={open} onClose={() => setOpen(false)} />
         <Button
           color="primary"
           variant="contained"
