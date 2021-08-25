@@ -64,7 +64,7 @@ function ProductHero(props) {
           className={classes.button}
           onClick={() => setOpen(!open)}
         >
-          ทดลองใช้งานฟรี 1 เดือน (Trial)
+          ทดลองใช้งานฟรี
         </Button>
         <SimpleDialog open={open} onClose={() => setOpen(false)} />
         <Button
