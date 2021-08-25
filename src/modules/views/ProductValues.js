@@ -95,7 +95,7 @@ function ProductValues(props) {
                 จองผ่านไลน์
               </Typography>
               <Typography variant="h5">
-                สามารถนำแอปเข้าไว้ในไลน์ที่มีอยู่ให้ลูกค้าใช้จองได้
+                สามารถนำแอปเข้าไว้ในไลน์ที่มีอยู่เพื่อให้ลูกค้าใช้จองได้
               </Typography>
             </div>
           </Grid>
