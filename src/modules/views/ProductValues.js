@@ -83,7 +83,7 @@ function ProductValues(props) {
                 จองได้ 24 ชั่วโมง
               </Typography>
               <Typography variant="h5">
-                ถึีงสนามจะปิดแล้ว ลูกค้าก็สามารถทำการจองได้ 24 ชั่วโมง
+                ถึงสนามจะปิดแล้ว ลูกค้าก็สามารถทำการจองได้ 24 ชั่วโมง
               </Typography>
             </div>
           </Grid>
