@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid"
 import ProductValues1 from "../../images/productValues1.svg"
 import ProductValues2 from "../../images/productValues2.svg"
 import ProductValues3 from "../../images/productValues3.svg"
+import ProductValues4 from "../../images/productValues4.svg"
 import PropTypes from "prop-types"
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
@@ -32,7 +33,7 @@ const styles = theme => ({
   },
   title: {
     marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(5),
+    marginBottom: theme.spacing(2),
   },
   curvyLines: {
     pointerEvents: "none",
@@ -52,7 +53,7 @@ function ProductValues(props) {
           className={classes.curvyLines}
           alt="curvy lines"
         />
-        <Grid container spacing={5}>
+        <Grid container spacing={5} justifyContent="center">
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
               <ProductValues1 className={classes.image} />
@@ -84,6 +85,17 @@ function ProductValues(props) {
               </Typography>
               <Typography variant="h5">
                 ถึงสนามจะปิดแล้ว ลูกค้าก็สามารถทำการจองได้ 24 ชั่วโมง
+              </Typography>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <div className={classes.item}>
+              <ProductValues4 className={classes.image} />
+              <Typography variant="h6" className={classes.title}>
+                จองผ่านไลน์
+              </Typography>
+              <Typography variant="h5">
+                สามารถนำแอปเข้าไว้ในไลน์ที่มีอยู่ให้ลูกค้าใช้จองได้
               </Typography>
             </div>
           </Grid>
