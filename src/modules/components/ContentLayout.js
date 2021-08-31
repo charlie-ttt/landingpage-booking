@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import AppAppBar from "../views/AppAppBar"
+import { Link } from "gatsby"
 import Paper from "@material-ui/core/Paper"
 import productCurvyLines from "../../images/productCurvyLines.png"
 import withRoot from "../withRoot"
@@ -21,18 +22,37 @@ const styles = () => ({
     padding: "5px 2rem",
     margin: "2rem 0",
   },
+  allpost: {
+    margin: "2rem 0",
+    color: "gray",
+    textDecoration: "none",
+    fontSize: "1rem",
+  },
   footer: {
     textAlign: "center",
   },
 })
 
-const Layout = ({ children, classes }) => {
+const Layout = ({ location, children, classes }) => {
+  const postPath = `/posts/`
+  const isSinglePostPage =
+    location.pathname !== postPath && location.pathname?.startsWith(postPath)
+
   return (
     <div className={classes.root}>
       <AppAppBar />
       <main>
         <div className={classes.content}>
-          <Paper className={classes.paper}>{children}</Paper>
+          <Paper className={classes.paper}>
+            {isSinglePostPage && (
+              <div className={classes.allpost}>
+                <Link to="/posts/" className={classes.allpost}>
+                  ← All Posts
+                </Link>
+              </div>
+            )}
+            {children}
+          </Paper>
         </div>
       </main>
       <footer className={classes.footer}>
