@@ -6,7 +6,7 @@ import productCurvyLines from "../../images/productCurvyLines.png"
 import withRoot from "../withRoot"
 import { withStyles } from "@material-ui/core/styles"
 
-const styles = theme => ({
+const styles = () => ({
   root: {
     backgroundImage: `url(${productCurvyLines})`,
     backgroundColor: "#fff5f8",
@@ -26,7 +26,7 @@ const styles = theme => ({
   },
 })
 
-const Layout = ({ location, title, children, classes }) => {
+const Layout = ({ children, classes }) => {
   return (
     <div className={classes.root}>
       <AppAppBar />

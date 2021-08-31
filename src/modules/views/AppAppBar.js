@@ -8,6 +8,7 @@ import { withStyles } from "@material-ui/core/styles"
 
 const styles = theme => ({
   title: {
+    margin: 0,
     fontSize: 24,
     color: "white",
   },
