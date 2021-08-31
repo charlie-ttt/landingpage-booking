@@ -1,7 +1,6 @@
 import * as React from "react"
 
 import AppAppBar from "../views/AppAppBar"
-import { Link } from "gatsby"
 import withRoot from "../withRoot"
 import { withStyles } from "@material-ui/core/styles"
 
