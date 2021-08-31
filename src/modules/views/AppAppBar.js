@@ -1,6 +1,7 @@
 import Toolbar, { styles as toolbarStyles } from "../components/Toolbar"
 
 import AppBar from "../components/AppBar"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { withStyles } from "@material-ui/core/styles"
@@ -8,6 +9,7 @@ import { withStyles } from "@material-ui/core/styles"
 const styles = theme => ({
   title: {
     fontSize: 24,
+    color: "white",
   },
   placeholder: toolbarStyles(theme).root,
   toolbar: {
@@ -42,7 +44,9 @@ function AppAppBar(props) {
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
           <div className={classes.left} />
-          <h1 className={classes.title}>Calendar Booking</h1>
+          <Link to="/">
+            <h1 className={classes.title}>Calendar Booking</h1>
+          </Link>
           <div className={classes.right}></div>
         </Toolbar>
       </AppBar>
