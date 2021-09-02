@@ -5,7 +5,7 @@ import ProductSmokingHero from "../modules/views/ProductSmokingHero"
 import ProductValues from "../modules/views/ProductValues"
 // --- Post bootstrap -----
 import React from "react"
-import Seo from "../components/seo"
+import Seo from "../modules/components/Seo"
 import withRoot from "../modules/withRoot"
 
 function Index() {
