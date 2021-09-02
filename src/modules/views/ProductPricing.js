@@ -40,15 +40,19 @@ function ProductValues(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <Grid container spacing={4} justifyContent="center">
+        <Grid container spacing={2} justifyContent="center">
           <Grid item xs={12} md={4}>
             <PricingCard
               title="Free"
-              price="0"
+              price="FREE"
               description={
                 <div>
-                  freee <br />
-                  better
+                  - ตารางเวลาออนไลน์
+                  <br />- ดูข้อมูลการจองย้อนหลัง
+                  <br />
+                  <br />
+                  - Online Schedule Display
+                  <br />- Manage and View Previous Bookings
                 </div>
               }
             />
@@ -56,12 +60,40 @@ function ProductValues(props) {
           <Grid item xs={12} md={4}>
             <PricingCard
               title="Standard"
-              price="0"
-              description={<div>dkdk</div>}
+              price="600"
+              description={
+                <div>
+                  - ตารางเวลาออนไลน์
+                  <br />- ดูข้อมูลการจองย้อนหลัง
+                  <br />- จองออนไลน์พร้อมระบบจ่ายเงิน
+                  <br />
+                  <br />
+                  - Online Schedule Display
+                  <br />- Manage and View Previous Bookings
+                  <br />- Payment System (all methods)
+                </div>
+              }
             />
           </Grid>
           <Grid item xs={12} md={4}>
-            <PricingCard title="Pro" price="0" description={<div>dkdk</div>} />
+            <PricingCard
+              title="Pro"
+              price="Contact Us"
+              description={
+                <div>
+                  - ตารางเวลาออนไลน์
+                  <br />- ดูข้อมูลการจองย้อนหลัง
+                  <br />- จองออนไลน์พร้อมระบบจ่ายเงิน
+                  <br />- ไม่จำกัดจำนวนคอร์ท
+                  <br />
+                  <br />
+                  - Online Schedule Display
+                  <br />- Manage and View Previous Bookings
+                  <br />- Payment System (all methods)
+                  <br />- Unlimited Court
+                </div>
+              }
+            />
           </Grid>
         </Grid>
       </Container>
