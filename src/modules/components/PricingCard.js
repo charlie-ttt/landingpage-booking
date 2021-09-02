@@ -14,8 +14,10 @@ const useStyles = makeStyles({
     height: 500,
   },
   title: {
-    fontSize: 30,
+    fontSize: 35,
     textAlign: "center",
+    fontWeight: "bold",
+    marginBottom: 20,
   },
   description: {
     fontSize: 18,
@@ -40,9 +42,7 @@ export default function PricingCard({ title, description, price }) {
           <Typography className={classes.title} gutterBottom>
             {title}
           </Typography>
-          <Typography className={classes.description} color="textSecondary">
-            {description}
-          </Typography>
+          <Typography className={classes.description}>{description}</Typography>
         </CardContent>
         <div className={classes.price}>
           {price}
