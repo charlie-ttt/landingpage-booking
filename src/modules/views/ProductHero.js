@@ -15,9 +15,11 @@ const styles = theme => ({
   },
   buttonsContainer: {
     display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   button: {
-    minWidth: 200,
+    width: 250,
     textAlign: "center",
     margin: 3,
   },
