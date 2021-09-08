@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Calendar Booking`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Court Booking Tool - an easy and simple way to allow online booking for customer.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
