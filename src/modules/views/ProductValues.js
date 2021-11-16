@@ -58,7 +58,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <ProductValues1 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
-                สะดวกใช้ง่าย
+                Easy to Use
               </Typography>
               <Typography variant="h5">
                 สะดวก รวดเร็ว
@@ -70,7 +70,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <ProductValues2 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
-                รองรับการจ่ายเงินออนไลน์
+                Instant Online Payment
               </Typography>
               <Typography variant="h5">
                 ไม่ว่าจะเป็นการจ่ายเงินผ่านการโอน หรือบัตรเครดิต
@@ -81,7 +81,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <ProductValues3 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
-                จองได้ 24 ชั่วโมง
+                24 Hours Availability
               </Typography>
               <Typography variant="h5">
                 ถึงสนามจะปิดแล้ว ลูกค้าก็สามารถทำการจองได้ 24 ชั่วโมง
@@ -92,7 +92,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <ProductValues4 className={classes.image} />
               <Typography variant="h6" className={classes.title}>
-                จองผ่านไลน์
+                Book Through Line App
               </Typography>
               <Typography variant="h5">
                 สามารถนำแอปเข้าไว้ในไลน์ที่มีอยู่เพื่อให้ลูกค้าใช้จองได้

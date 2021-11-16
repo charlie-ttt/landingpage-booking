@@ -48,7 +48,7 @@ function ProductHero(props) {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h3" marked="center">
-        เว็บจองสนามกีฬา ใช้ง่าย ไม่วุ่นวาย มีทุกฟังก์ชั่น
+        Booking Tools for Sport Courts
       </Typography>
       <Typography
         color="inherit"
@@ -66,7 +66,7 @@ function ProductHero(props) {
           className={classes.button}
           onClick={() => setOpen(!open)}
         >
-          ทดลองใช้งานฟรี
+          สนใจใช้งาน (Buy)
         </Button>
         <SimpleDialog open={open} onClose={() => setOpen(false)} />
         <Button
@@ -78,7 +78,7 @@ function ProductHero(props) {
           href="https://app.calendarbooking.site/"
           target="_blank"
         >
-          ตัวอย่างเว็บไซต์ (Demo)
+          ตัวอย่างเว็บไซต์ (Try)
         </Button>
       </div>
     </ProductHeroLayout>
